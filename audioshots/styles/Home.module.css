@@ -1,0 +1,373 @@
+/* .page1{
+    height: 200vh;
+    width: 100%;
+    background: linear-gradient(150deg ,rgb(174, 232, 198),rgb(13, 162, 75));
+    margin: 0%;
+    padding: 0%;
+}
+.page1::-webkit-scrollbar {
+    display: none;
+}
+
+.Navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    margin-top: 2vw;
+    margin-left: 5vw;
+}
+.tag{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 4vw;
+}
+.navName{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+}
+.btn{
+    height: 6vh;
+    width: 11vw;
+    background: linear-gradient(150deg ,#EDE8DC,#edb4b4);
+    margin-top: 2vw;
+    margin-right: 5vw;
+    border: none;
+    border-radius: 5px;
+    color: rgb(18, 17, 17);
+    cursor: pointer;
+}
+
+.leftText{
+    height: 100vh;
+    width: 10vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 2vw;
+    padding-left: 2vw;
+    margin-left: 90px;
+    margin-top: 0;
+}
+.centerImg{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100vh;
+    width: 90vw;
+    margin-bottom: 0%;
+}
+.centerImg img{
+    height: 80%;
+    width: 120%;
+    object-fit:contain;
+    position: relative;
+}
+.rightText{
+    height: 80vh;
+    width: 30vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content:flex-start;
+    padding-top: 2vw;
+    padding-right: 2vw;
+    flex-direction: column;
+    gap: 2vh;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3.4%;
+}
+
+.h1{
+    font-size: 4rem;
+    margin-top: 0%;
+}
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.appInfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-left: 0;
+}
+.appleStore{
+    height: 11vh;
+    width: 13vw;
+}
+.appleStore img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.palyStrore{
+    height: 10.5vh;
+    width: 12.5vw;
+}
+.palyStrore img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.followInfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+} */
+
+/* General Styles for mobile-first design (360x740) */
+/* Mobile-First Base Styles (default) */
+.page1 {
+    height: auto;
+    width: 100%;
+    background: linear-gradient(150deg, rgb(174, 232, 198), rgb(13, 162, 75));
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.page1::-webkit-scrollbar {
+    display: none;
+}
+
+.Navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 5%;
+}
+
+.listIcon{
+    height: 10%;
+    width: 10%;
+    left: 0%;
+    bottom: 0%;
+}
+
+.logo {
+    margin-top: 2rem;
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2vw;
+}
+
+.navName {
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+}
+
+.btn {
+    height: 6vh;
+    width: 30vw;
+    background: linear-gradient(150deg, #EDE8DC, #edb4b4);
+    margin-top: 2rem;
+    border: none;
+    border-radius: 5px;
+    color: rgb(18, 17, 17);
+    cursor: pointer;
+}
+
+/* Main content styles */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.leftText,
+.rightText {
+    width: 90vw;
+    padding: 1rem;
+}
+
+.responsiveNav .btn{
+    height: 4vh;
+    width: 20vw;
+    font-size: 0.7rem;
+    margin-top: 0%;
+}
+
+.centerImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100vw;
+}
+
+.centerImg img {
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+}
+
+.h1 {
+    font-size: 2.5rem;
+    margin-top: 0;
+    text-align: center;
+}
+
+.appInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.appleStore,
+.palyStrore {
+    height: 7vh;
+    width: 50vw;
+}
+
+.appleStore img,
+.palyStrore img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.followInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.responsiveNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 5%;
+    margin-top: 0%;
+}
+/* Tablet (min-width: 600px) */
+@media only screen and (max-width:450px) {
+    .Navbar{
+        display: none;
+    }
+}
+@media only screen and (min-width:450px) {
+    .responsiveNav{
+        display: none;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .btn {
+        width: 20vw;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .leftText,
+    .rightText {
+        width: 80vw;
+        padding: 1.5rem;
+    }
+
+    .h1 {
+        font-size: 3rem;
+    }
+
+    .appleStore,
+    .palyStrore {
+        height: 9vh;
+        width: 40vw;
+    }
+
+    .followInfo {
+        flex-direction: row;
+        gap: 4vw;
+    }
+}
+
+/* Desktop (min-width: 1024px) */
+@media only screen and (min-width: 1024px) {
+    .Navbar {
+        padding: 1rem 10%;
+    }
+
+    .tag {
+        gap: 4vw;
+    }
+
+    .navName {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        width: 10vw;
+    }
+
+    .main {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+
+    .leftText {
+        width: 20vw;
+        padding: 2rem;
+    }
+
+    .centerImg {
+        height: 100vh;
+        width: 50vw;
+    }
+
+    .centerImg img {
+        height: 80%;
+        width: 100%;
+    }
+
+    .rightText {
+        width: 30vw;
+        padding: 2vw;
+    }
+
+    .h1 {
+        font-size: 4rem;
+    }
+
+    .appInfo {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .appleStore,
+    .palyStrore {
+        height: 11vh;
+        width: 13vw;
+    }
+
+    .followInfo {
+        flex-direction: row;
+        gap: 5vw;
+    }
+}

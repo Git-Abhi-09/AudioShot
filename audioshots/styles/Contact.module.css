@@ -1,0 +1,221 @@
+/* .main{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    margin-left: 10vw;
+}
+.card{
+    height: 60vh;
+    width: 50vw;
+    background-color: white;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+}
+.leftCard{
+    height: 85%;
+    width: 40%;
+    background-color: #edb4b4;
+    padding: 2rem;
+}
+.rightCard{
+    display: flex;
+    padding: 2rem;
+    line-height: 1px;
+    flex-direction: column;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.formContainer {
+    margin-top: 1rem;
+}
+
+.text{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+
+.text:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+}
+
+.btn{
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+.iPhone{
+    margin-top: 1rem;
+    margin-right: 3rem;
+    height: 60vh;
+    width: 45vw;
+}
+.iPhone img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+ */
+
+/* Main container */
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto; /* Allow height to adjust based on content */
+    width: 100%;
+    padding: 1rem;
+}
+
+/* Card container */
+.card {
+    display: flex;
+    flex-direction: column; /* Start with a vertical layout */
+    background-color: white;
+    width: 120vw; /* Full width for mobile */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+/* Left and Right sections in Card */
+.leftCard {
+    background-color: #edb4b4;
+    padding: 2rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.rightCard {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+/* Form Elements */
+.text {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.text:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+}
+
+/* Button */
+.btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* iPhone Image container */
+.iPhone {
+    margin-top: 1rem;
+    height: 80%;
+    width: 90vw; /* Full width for mobile */
+    max-width: 280px; /* Max width for larger screens */
+}
+
+.iPhone img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+/* Tablet Breakpoint (min-width: 768px) */
+@media only screen and (min-width: 768px) {
+    .main {
+        flex-direction: row; /* Horizontal layout */
+        justify-content: center;
+        padding: 2rem; /* More padding */
+    }
+
+    .card {
+        flex-direction: row; /* Horizontal card layout */
+        max-width: 80vw; /* Wider card for tablet */
+    }
+
+    .leftCard {
+        width: 40%; /* 40% for left card */
+        padding: 2rem;
+    }
+
+    .rightCard {
+        width: 60%; /* 60% for right card */
+    }
+
+    .iPhone {
+        width: 50vw; /* Adjust width for tablet */
+        margin-top: 0; /* Remove top margin */
+    }
+}
+
+/* Desktop Breakpoint (min-width: 1024px) */
+@media only screen and (min-width: 1024px) {
+    .main {
+        padding: 3rem; /* More padding */
+    }
+
+    .card {
+        max-width: 600px; /* Max width for desktop */
+    }
+
+    .leftCard {
+        padding: 2rem; /* Maintain padding */
+    }
+
+    .rightCard {
+        padding: 2rem; /* Maintain padding */
+    }
+
+    .iPhone {
+        width: 40vw; /* Adjust for desktop */
+        margin-right: 3rem; /* Right margin */
+    }
+}
+
